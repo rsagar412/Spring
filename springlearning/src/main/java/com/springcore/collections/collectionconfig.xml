@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+  xmlns:context="http://www.springframework.org/schema/context"
+  xmlns:p="http://www.springframework.org/schema/p"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans
+  https://www.springframework.org/schema/beans/spring-beans.xsd
+  http://www.springframework.org/schema/context
+  https://www.springframework.org/schema/context/spring-context.xsd">
+
+<bean class= "com.springcore.collections.Emp" name="emp1">
+  <property name="name" value="John Doe"/>
+  <property name="phones">
+    <list>
+      <value>1234567890</value>
+      <value>0987654321</value>
+      <null/>
+    </list>
+    </property>
+    <property name="addresses">
+    <set>
+      <value>123 Main St, Mumbai</value>
+      <value>456 Elm St, Delhi</value>
+      <value>789 Oak St, Chennai</value>
+      </set>
+    </property>
+    <property name="courses">
+    <map>
+      <entry key="Java" value="Spring Framework"/>
+      <entry key="Python" value="Django"/>
+      <entry key="JavaScript" value="React"/>
+      </map>
+    </property>
+</bean>
+
+  <!-- <bean class="com.springcore.Student" name="student1">
+    <property name="studentName" value="John Doe"/>
+    <property name="studentId" value="20"/>
+    <property name="studentAddress" value="123 Main St, Springfield"/>
+    </bean>
+
+     <bean class="com.springcore.Student" name="student2">
+    <property name="studentName" value="Brad"/>
+    <property name="studentId" value="25"/>
+    <property name="studentAddress" value="145 Main St, Springfield"/>
+    </bean> -->
+
+</beans>    

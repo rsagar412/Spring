@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+  xmlns:context="http://www.springframework.org/schema/context"
+  xmlns:p="http://www.springframework.org/schema/p"
+   xmlns:c="http://www.springframework.org/schema/c"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans
+  https://www.springframework.org/schema/beans/spring-beans.xsd
+  http://www.springframework.org/schema/context
+  https://www.springframework.org/schema/context/spring-context.xsd">
+ <!-- <bean class="com.springcore.ci.certi" name = "certi1" c:name = "Java Programming."> -->
+
+ <!-- <constructor-arg value="MCP-DFT-001"/> -->
+  <!-- </bean> -->
+ 
+ <!-- <bean class= "com.springcore.ci.Person" name= "person1">
+   <constructor-arg value="John Doe"/>
+    <constructor-arg value="20"/>
+    <constructor-arg ref = "certi1" />
+
+ </bean> -->
+
+  <bean class= "com.springcore.ci.Addition" name= "add1" c:a = "3" c:b = "2" >
+ </bean>
+
+ 
+
+  <!-- <bean class="com.springcore.Student" name="student1">
+    <property name="studentName" value="John Doe"/>
+    <property name="studentId" value="20"/>
+    <property name="studentAddress" value="123 Main St, Springfield"/>
+    </bean>
+
+     <bean class="com.springcore.Student" name="student2">
+    <property name="studentName" value="Brad"/>
+    <property name="studentId" value="25"/>
+    <property name="studentAddress" value="145 Main St, Springfield"/>
+    </bean> -->
+
+</beans>    
